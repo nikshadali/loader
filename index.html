@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ribbon</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #eee;
+            background-color: #fff;
+        }
+        .card{
+            width: 300px;
+            height: 400px;
+            border: 1px solid lightgray;
+            position: relative;
+        }
+       
+.ribbon {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+}
+.ribbon {
+  --f: .5em; 
+  --r: .8em;
+  
+  position: absolute;
+  top: 20px;
+  left: calc(-1*var(--f));
+  padding-inline: .25em;
+  line-height: 1.8;
+  background: #00819d;
+  border-top: var(--f) solid #0005;
+  border-right: var(--r) solid #0000;
+  clip-path: 
+    polygon(0 100%,0 var(--f),var(--f) 0,
+      var(--f) var(--f),100% var(--f),
+      calc(100% - var(--r)) calc(50% + var(--f)/2),100% 100%);
+}
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="card">
+            <div class="ribbon"> Nikshad Ali</div>
+          
+        </div>
+        
+    </div>
+</body>
+</html>
